@@ -1,5 +1,7 @@
 Here are step-by-step instructions to help users set up and run the Quix frontend on their local machine:
 
+please first clone the backend code of quix and run it then clone this . backend code link(https://github.com/niknshinde/quix_backend.git)
+
 1. **Clone the Git Repository:**
    - Open your terminal.
    - Navigate to the directory where you want to clone the repository.
