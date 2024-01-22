@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,285 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* overflow: hidden; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+
+.profile{
+  color: white;
+  font-size: 30px;
+}
+
+.profile:hover{
+  color:lightcoral;
+  font-size: 30px;
+}
+
+
+
+.user_button{
+  margin-right: 150px;
+}
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+.make_upper {
+  z-index: 100;
+}
+
+.box{
+  width: 100vw;
+  height: 50vh;
+  background-color: gray;
+  object-fit: fit;
+
+}
+
+.center-text{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.card_flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards{
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Increase the scale value for a more pronounced effect */
+}
+
+/* .questionrender{
+  margin: 30px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+/* QuestionListRender.css */
+
+.questionrender {
+  font-family: 'Arial', sans-serif;
+}
+
+.question-container {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.option-container {
+  margin: 20px;
+  cursor: pointer;
+}
+
+
+.radio-input {
+  margin-right: 5px;
+}
+
+
+.radio-input.checked {
+  background-color: lightblue;
+}
+.selected-option {
+  background-color: lightgreen;
+  padding: 10px 0;
+}
+
+.correct-answer {
+  margin: 5px;
+  color: lightgreen;
+}
+
+.your-answer {
+  margin: 5px;
+  color: lightcoral;
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+/* 
+login css */
+
+
+
+/* dash board css */
+.dash_board{
+  margin: 20px 30px;
+
+}
+
+.leaderboard{
+  margin-bottom: 50vh;
+}
+
+.login{
+  height: 100vh;
+}
+
+.admin_creation_form{
+  height: 100vh;
+}
+
+.centering{
+  margin: 20px 30px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+
+
+
+/* quiz form css */
+
+.questionForm{
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.remove_btn{
+  margin-bottom: 20px;
+}
+
+.add_option_btn{
+  margin-right: 10px;
+}
+
+.form_response{
+  background-color: lightgreen;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+/* 
+admin creation form */
+
+.admin_creation_form{
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+/* Add more styles as needed */
+
+.profile2 h2 {
+  margin-top: 0;
+}
+
+.profile2 p {
+  margin-bottom: 10px;
+}
+
+
+
+.footer {
+  margin-top: 20vh;
+  background-color: black;
+  color: #fff;
+  padding: 100px 0;
+  /* position: fixed; */
+  z-index: 3;
+}
+
+.footer-content {
+  max-width: 1200px;
+  
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  flex: 1; /* Occupy 100% of the available space on smaller screens */
+  text-align: center;
+  margin-bottom: 10px; /* Add some space between logo and info */
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-info, .footer-social {
+  flex: 1; /* Equal distribution of space between info and social on smaller screens */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-info h3, .footer-social h3 {
+  font-size: 18px;
+}
+
+.footer-info p, .footer-social p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 70px;
+  height: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center;
+  }
+
+  .footer-logo, .footer-info, .footer-social {
+    flex: 1; /* Equal distribution of space for all sections */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
 }
