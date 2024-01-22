@@ -2,7 +2,7 @@ import React from 'react';
 import backendContext from './backendContext';
 export const BackendState = (props) => {
 
-  const host = 'http://localhost:4000';
+  const host = 'https://quix-backend.onrender.com';
 
   return (
     <backendContext.Provider
