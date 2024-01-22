@@ -79,10 +79,10 @@ function Navbar() {
           ) : (
             <form className="flex-form" role="search">
               <Link to="/login" aria-pressed="true">
-                <button className="nav-btn">Login</button>
+                <button className="nav-btn btn mx-2 btn-primary">Login</button>
               </Link>
               <Link to="/signup" aria-pressed="true">
-                <button className="nav-btn">SignUp</button>
+                <button className="nav-btn btn btn-primary">SignUp</button>
               </Link>
             </form>
           )}
