@@ -39,11 +39,11 @@ const QuestionListRender = (props) => {
       });
 
       const score = await getscore.json();
-      console.log("score of user is User:", score.valuse);
-      let currentScore = score.valuse;
+      const currentScore = score.values;
+
 
       // If the score is undefined, set it to 0
-      if (score.valuse === undefined) {
+      if (score.values === undefined) {
         currentScore = 0;
       }
 
@@ -60,12 +60,10 @@ const QuestionListRender = (props) => {
       });
 
       const updatedUser = await response.json();
-      console.log("Updated User:", updatedUser);
 
       // Extracting the new score for the current language
       const language = "english";
       const newScore = updatedUser.scores[language];
-      console.log("New Score:", newScore);
 
       // Setting the new score and marking the quiz as submitted
       setScore(newScore);
